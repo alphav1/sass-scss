@@ -1,0 +1,17 @@
+footer {
+    @extend %shared-section;
+    
+    // Additional header-specific styles
+    margin-bottom: $base-margin;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    p {
+      margin: 0;
+    }
+  
+    .btn-primary {
+      padding: $base-padding;
+    }
+  }

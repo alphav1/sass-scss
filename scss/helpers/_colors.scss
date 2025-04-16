@@ -1,0 +1,22 @@
+// Loop, map and nested loop
+// Function to generate classes for text and background colors
+@each $key, $val in $colors{
+    // Iterate through the map of colors
+    // For each color in the map, generates two base classes
+    .text-#{$key}{
+        color: $val
+    }
+    .bg-#{$key}{
+        background-color: $val
+    }
+    // Inside the @each loop, there's a nested @for loop that creates light variants
+    @for $i from 1 through 9{
+        .text-#{$key}-light-#{$i}{
+            color: mix(white,$val,$i*10%)
+        }
+        .bg-#{$key}-light-#{$i}{
+            background-color: mix(white,$val,$i*10%)
+        }
+    }
+    // This generates classes like: .text-primary-light-1 (10% lighter)
+}

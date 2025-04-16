@@ -1,0 +1,15 @@
+//variables and functions
+@import 'helpers/_variables.scss';
+@import 'helpers/_colors.scss';
+@import 'base/_typography.scss';
+@import 'helpers/_mixins.scss';
+
+// base and layout 
+@import 'base/_reset.scss';
+@import 'layout/_shared.scss';
+@import 'layout/_header.scss';
+@import 'layout/_footer.scss';
+
+@import 'components/_card.scss';
+@import 'components/_buttons.scss';
+@import 'layout/container.scss';

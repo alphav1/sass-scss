@@ -1,0 +1,32 @@
+
+// Establishing variables of the colors
+$primary-color: #007bff;
+$secondary-color: #555;
+$light-background: #f4f4f4;
+$white: #fff;
+$error-color: #dc3545;
+$success-color: #28a745;
+
+// Map of colors
+$colors:(
+    "primary": $primary-color, //key value pair using map with a reference to the variables of the colors
+    "secondary": $secondary-color,
+    "light-background": $light-background,
+    "white": #fff,
+    "error": #dc3545,
+    "success": #28a745
+);
+
+// Establishing variables of the text and others
+$dark-text: #333;
+$grey-text: #777;
+
+$base-padding: 0.75rem;
+$base-margin: 0.75rem;
+
+$base-border-radius: 20px;
+$base-border-thickness: 1px;
+
+$base-box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+
+$base-font-size: 1rem;

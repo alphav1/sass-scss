@@ -1,0 +1,24 @@
+// %shared-section placeholder selector 
+// %shared-section is extended by both header and footer
+%shared-section {
+    display: block;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: $base-padding * 2;
+    border-radius: $base-border-radius;
+    box-shadow: $base-box-shadow;
+    background-color: $secondary-color;
+    color: $white;
+  }
+
+  // MIXINS
+  // Definition: Reusable blocks of CSS that copy their properties to the selector that includes them
+  // Parameters: Can accept parameters to customize output
+  // Usage: Used with @include directive
+  // Output: Duplicates the CSS code wherever included
+
+  // EXTENSION
+  // Definition: Share CSS properties between selectors using placeholder selectors (%)
+  // Parameters: Cannot accept parameters
+  // Usage: Used with @extend directive
+  // Output: Groups selectors together in the compiled CSS

@@ -1,0 +1,11 @@
+header {
+    @extend %shared-section;
+    // Inherits the shared-section styles using the @extend directive
+    // Additional footer-specific styles
+    margin-top: $base-margin;
+    
+    span {
+      display: inline-block;
+      padding: $base-padding;
+    }
+  }

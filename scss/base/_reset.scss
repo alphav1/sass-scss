@@ -1,0 +1,20 @@
+// Provides basic CSS reset rules to normalize browser default styles
+
+*{
+    color:inherit;
+    margin:0;
+}
+
+body{
+   font-family: "Times New Roman", Times, serif;
+}
+
+ul{
+    list-style-type: none;
+    padding:0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}

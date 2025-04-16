@@ -1,0 +1,16 @@
+//MIXINS
+
+// A mixin is a reusable block of CSS declarations that can be included in multiple selectors.
+// Template function that outputs CSS rules.
+
+@mixin btn($bg-color:#818d6d){ // Default parameter
+    // Uses variables defined in the _variables.scss file
+    text-decoration: none;
+    cursor: pointer;
+    display:inline-block;
+    border: none;
+    border-radius: $base-border-radius;
+    box-shadow: $base-box-shadow;
+    font-size: $base-font-size;
+    background-color: $bg-color;
+}

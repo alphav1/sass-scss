@@ -1,0 +1,16 @@
+.btn {
+    @include btn; // Mixin using default parameters
+    //@include btn($base-color); // Mixin using a single parameter
+}
+
+// SASS loop functionality (for-each loop)
+// For each color in the $colors map, two button classes are generated
+@each $key,$val in $colors{
+    .btn-#{$key}{
+        @include btn($val); // Mixin using a single parameter
+    }
+    .btn-outlined-#{$key}{
+        @include btn(pink); // Mixin using a single parameter
+        border: $base-border-thickness solid $val;
+    }
+}

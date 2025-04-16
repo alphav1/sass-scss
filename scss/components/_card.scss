@@ -1,0 +1,22 @@
+@use 'sass:math'; // Using the math module to perform calculations
+
+// Simple NESTING used to style the card component and inner elements
+.card{
+    display: block;
+    padding: $base-padding;
+    border: $base-border-thickness solid $secondary-color;
+    box-shadow: $base-box-shadow;
+    border-radius: math.div($base-border-radius,4); //Requires the use of the math module
+    margin: 20px 0;
+
+    .card-title{
+        font-size: 1.5rem;
+        color: blue;
+        font-weight: bold;
+    }
+
+    .card-body{
+        font-size: $base-font-size;
+        color: $grey-text;
+    }
+}
